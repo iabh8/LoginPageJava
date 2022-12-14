@@ -2,6 +2,7 @@ import java.awt.*;
 import java.awt.event.*;    
 
 public class LoginPage extends Frame implements ActionListener {
+    Label l1, l2;
     TextField t1, t2, t3;    
     Button b1;   
   
@@ -16,12 +17,15 @@ public class LoginPage extends Frame implements ActionListener {
         t3.setEditable(false);   
         b1 = new Button("LOGIN");    
         b1.setBounds(65, 200, 50, 50);  
+        Label l1 = new Label("USERNAME");
+        Label l2 = new Label("PASSWORD");
 
         b1.addActionListener(this);    
-
-        add(tf1);  
-        add(tf2);  
-        add(tf3);  
+        add(l1);
+        add(t1);
+        add(l2);
+        add(t2);  
+        add(t3);  
         add(b1);  
   
         setSize(300,300);    
